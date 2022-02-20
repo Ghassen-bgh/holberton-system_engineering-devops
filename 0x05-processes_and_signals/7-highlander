@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# display some stuff infinitely
+# display  some stuff infinitely
 bool=true
 trap "echo I am invincible!!!" SIGTERM
 while [ $bool ]
