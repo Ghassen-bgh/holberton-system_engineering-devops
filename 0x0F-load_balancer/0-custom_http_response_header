@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# install nginx web server and sets a custom header
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install nginx
-sudo chown -R "$USER":"$USER" /var/www/
-sudo chown -R "$USER":"$USER" /etc/nginx
-sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
-sudo service nginx start
