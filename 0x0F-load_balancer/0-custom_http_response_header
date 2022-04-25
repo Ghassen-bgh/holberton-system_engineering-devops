@@ -5,5 +5,5 @@ sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo chown -R "$USER":"$USER" /var/www/
 sudo chown -R "$USER":"$USER" /etc/nginx
-sudo sed -i '63i add_header X-Served-By 884-web-02;' /etc/nginx/nginx.conf
+sudo sed -i '/listen 80 default_server;/a add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
 sudo service nginx start
