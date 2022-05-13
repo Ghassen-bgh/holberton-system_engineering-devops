@@ -17,8 +17,8 @@ sudo add-apt-repository -y ppa:vbernat/haproxy-2.4
 
 sudo apt-get -y install haproxy=2.4.\*
 
-sudo echo -e "$config" >> /etc/haproxy/haproxy.cfg
+sudo echo -e "$config" >> sudo /etc/haproxy/haproxy.cfg
 
-sudo echo -e "\nENABLED=1\n" >> /etc/default/haproxy
+sudo echo -e "\nENABLED=1\n" >> sudo /etc/default/haproxy
 
 sudo service haproxy restart
