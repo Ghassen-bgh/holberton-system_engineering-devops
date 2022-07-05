@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Install nginx load balancer HAProxy
-
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-2.6
 sudo apt-get -y update
