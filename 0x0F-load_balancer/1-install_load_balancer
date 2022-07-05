@@ -6,6 +6,7 @@ sudo cp /etc/default/haproxy /etc/default/haproxy.bak
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.bak
 sudo sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
 
+
 config="frontend Local_Server
         bind *:80
         mode http
